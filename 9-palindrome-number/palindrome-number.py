@@ -3,8 +3,9 @@ class Solution:
         if x<0:
             return False
         rev=0
-        num=x
-        while num!=0:
-            rev=rev*10+num%10
-            num=num//10
-        return rev==x
+        original=x
+        while x!=0:
+            digit=x%10 #to get last digit
+            rev=rev*10+digit
+            x=x//10
+        return rev==original

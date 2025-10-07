@@ -5,7 +5,7 @@ class Solution:
         rev=0
         original=x
         while x!=0:
-            digit=x%10 #to get last digit
-            rev=rev*10+digit
+            D=x%10
+            rev=rev*10+D
             x=x//10
         return rev==original
